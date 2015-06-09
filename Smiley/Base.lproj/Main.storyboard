@@ -7,7 +7,7 @@
         <!--Smiley View Controller-->
         <scene sceneID="d8d-bb-goM">
             <objects>
-                <viewController id="yo4-Bv-Mxc" customClass="SmileyViewController" sceneMemberID="viewController">
+                <viewController id="yo4-Bv-Mxc" customClass="SmileyViewController" customModule="Smiley" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C8g-TI-f15"/>
                         <viewControllerLayoutGuide type="bottom" id="kWG-mC-JX8"/>
@@ -19,6 +19,27 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UcK-s6-aB9" customClass="FaceView" customModule="Smiley" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleFactor">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="happinessFactor">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="smiliness">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6hp-Ft-hbr" appends="YES" id="lYq-5O-Edp"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,6 +52,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snR-bH-3YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6hp-Ft-hbr">
+                    <connections>
+                        <outlet property="delegate" destination="UcK-s6-aB9" id="plW-pn-Tws"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="374" y="362"/>
         </scene>
