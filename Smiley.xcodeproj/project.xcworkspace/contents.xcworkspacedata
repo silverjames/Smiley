@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../SmileyViewController.swift">
-   </FileRef>
-   <FileRef
       location = "self:Smiley.xcodeproj">
    </FileRef>
 </Workspace>

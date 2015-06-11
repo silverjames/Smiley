@@ -30,16 +30,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="happinessFactor">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="smiliness">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="6hp-Ft-hbr" appends="YES" id="lYq-5O-Edp"/>
-                                </connections>
+                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,13 +41,11 @@
                             <constraint firstItem="UcK-s6-aB9" firstAttribute="top" secondItem="cNM-2C-ik6" secondAttribute="top" id="tAl-ei-AsF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="UcK-s6-aB9" id="PoY-RD-e7K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snR-bH-3YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="6hp-Ft-hbr">
-                    <connections>
-                        <outlet property="delegate" destination="UcK-s6-aB9" id="plW-pn-Tws"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="374" y="362"/>
         </scene>

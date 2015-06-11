@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		723E89281B25D89A00DD7779 /* SmileyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E89271B25D89A00DD7779 /* SmileyViewController.swift */; };
-		723E89401B26BA3700DD7779 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723E893F1B26BA3700DD7779 /* Media.xcassets */; };
 		723E89601B26BC5100DD7779 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 723E89551B26BC5100DD7779 /* AppIcon.appiconset */; };
 		72A657891B2097FA009EDC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657881B2097FA009EDC78 /* AppDelegate.swift */; };
 		72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578C1B2097FA009EDC78 /* Main.storyboard */; };
@@ -30,13 +29,12 @@
 
 /* Begin PBXFileReference section */
 		723E89271B25D89A00DD7779 /* SmileyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyViewController.swift; sourceTree = SOURCE_ROOT; };
-		723E893F1B26BA3700DD7779 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		723E89551B26BC5100DD7779 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../../../Downloads/ios/AppIcon.appiconset; sourceTree = "<group>"; };
 		72A657831B2097FA009EDC78 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A657871B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A657881B2097FA009EDC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A6578D1B2097FA009EDC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72A6578F1B2097FA009EDC78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Smiley/Images.xcassets; sourceTree = "<group>"; };
+		72A6578F1B2097FA009EDC78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72A657921B2097FA009EDC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		72A657981B2097FA009EDC78 /* SmileyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A6579D1B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 		72A6577A1B2097FA009EDC78 = {
 			isa = PBXGroup;
 			children = (
-				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
 				72A657851B2097FA009EDC78 /* Smiley */,
 				72A6579B1B2097FA009EDC78 /* SmileyTests */,
 				72A657841B2097FA009EDC78 /* Products */,
@@ -96,7 +93,7 @@
 		72A657861B2097FA009EDC78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				723E893F1B26BA3700DD7779 /* Media.xcassets */,
+				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
 				72A657881B2097FA009EDC78 /* AppDelegate.swift */,
 				72A657911B2097FA009EDC78 /* LaunchScreen.xib */,
 				72A657871B2097FA009EDC78 /* Info.plist */,
@@ -201,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723E89401B26BA3700DD7779 /* Media.xcassets in Resources */,
 				72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */,
 				72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */,
 				723E89601B26BC5100DD7779 /* AppIcon.appiconset in Resources */,

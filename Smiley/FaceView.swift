@@ -8,31 +8,47 @@
 
 import UIKit
 
+protocol faceViewDataSource: class {
+    func smilinessForFaceView(sender:FaceView) ->Double?
+}
+
 @IBDesignable
 class FaceView: UIView {
+
+//  Inspectable properties
     @IBInspectable
     var scaleFactor: CGFloat = 0.8 { didSet {setNeedsDisplay()}}
     @IBInspectable
     var lineWidth: CGFloat = 3 { didSet {setNeedsDisplay()}}
     @IBInspectable
     var color: UIColor = UIColor.blueColor() {didSet {setNeedsDisplay()}}
-    @IBInspectable
-    var smiliness: CGFloat = 0.0 {didSet {setNeedsDisplay()}}//between -1 and +1
     
-    var faceCenter: CGPoint {
-        return convertPoint(center, fromView: superview)
-    }
-    
+    //  constants, structs and delegates
     let eyeToFaceFactor: CGFloat = 0.15
     let eyeWidthFactor: CGFloat = 0.4 //between 0 and 1
     let eyeHeightFactor: CGFloat = 0.35 //between
     let mouthControlPointSeparator: CGFloat = 0.3
     let smilinessDamper: CGFloat = 0.3
-
+    
+    private enum Eye {
+        case Left, Right
+    }
+    
+    private enum ControlPoints {
+        case CP1, CP2
+    }
+    
+    weak var dataSource: faceViewDataSource?
+    
+//  computed properties
+    var faceCenter: CGPoint {
+        return convertPoint(center, fromView: superview)
+    }
+    
     var faceRadius: CGFloat {
         return min(bounds.width, bounds.height)/2
     }
-
+    
     var eyeRadius: CGFloat {
         return faceRadius * eyeToFaceFactor * scaleFactor
     }
@@ -48,38 +64,77 @@ class FaceView: UIView {
         return faceCenter.y + eyeHeightFactor * faceRadius * scaleFactor
     }
     
-    var mouthControlPoint1: CGPoint {
-        return CGPoint (x: faceCenter.x - mouthControlPointSeparator * faceRadius * scaleFactor, y: mouthYBaseline + smiliness * scaleFactor * faceRadius * smilinessDamper)
-    }
-    var mouthControlPoint2: CGPoint {
-        return CGPoint (x: faceCenter.x + mouthControlPointSeparator * faceRadius * scaleFactor, y: mouthYBaseline + smiliness * scaleFactor * faceRadius * smilinessDamper)
-    }
     
+
+//    public methods
     override func drawRect(rect: CGRect) {
+//        the face
         let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius * scaleFactor, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
         facePath.lineWidth = lineWidth
         color.set()
         facePath.stroke()
         
-        let leftEyePath = UIBezierPath(arcCenter: leftEyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
-        leftEyePath.lineWidth = lineWidth
-        color.set()
-        leftEyePath.stroke()
+//      the eyes
+        getEyePath(.Left).stroke()
+        getEyePath(.Right).stroke()
+ 
 
-        let rightEyePath = UIBezierPath(arcCenter: rightEyeCenter, radius: eyeRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
-        rightEyePath.lineWidth = lineWidth
-        color.set()
-        rightEyePath.stroke()
-
-        //the mouth
+//        the mouth
+        let smiliness = dataSource?.smilinessForFaceView(self) ?? 0.0
+        
         let mouthPath = UIBezierPath()
         mouthPath.moveToPoint(CGPoint(x: leftEyeCenter.x - eyeRadius , y: mouthYBaseline))
-        mouthPath.addCurveToPoint(CGPoint(x: rightEyeCenter.x + eyeRadius, y: mouthYBaseline), controlPoint1: mouthControlPoint1, controlPoint2: mouthControlPoint2)
+        mouthPath.addCurveToPoint(CGPoint(x: rightEyeCenter.x + eyeRadius, y: mouthYBaseline), controlPoint1: getControlPoint(.CP1, smiliness: smiliness), controlPoint2: getControlPoint(.CP2, smiliness: smiliness))
         mouthPath.lineWidth = lineWidth
         color.set()
         mouthPath.stroke()
         
     }
+    
+    func scale (gesture: UIPinchGestureRecognizer){
+        
+        switch gesture.state{
+        case .Changed:
+            scaleFactor *= gesture.scale
+            println("pinch recognized, scale is: \(gesture.scale)")
+            gesture.scale = 1
+        default:
+            break
+        }
+        
+    }
+    
+
+    private func getControlPoint(cp: ControlPoints, smiliness: Double) -> CGPoint{
+        var xFactor: CGFloat
+        
+        switch cp {
+        case .CP1:
+            xFactor = -1 * mouthControlPointSeparator * faceRadius * scaleFactor
+        case .CP2:
+            xFactor = mouthControlPointSeparator * faceRadius * scaleFactor
+        }
+        var yFactor = mouthYBaseline +  scaleFactor * faceRadius * smilinessDamper * CGFloat(smiliness)
+        return CGPoint(x: faceCenter.x + xFactor, y: yFactor)
+    }
+    
+    private func getEyePath(eye: Eye) ->UIBezierPath{
+        var center: CGPoint
+        
+        switch eye {
+        case .Left:
+            center = leftEyeCenter
+        case .Right:
+            center = rightEyeCenter
+        }
+
+        let path = UIBezierPath(arcCenter: center, radius: eyeRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
+        path.lineWidth = lineWidth
+        color.set()
+        return path
+
+    }
+    
 
 
 }
