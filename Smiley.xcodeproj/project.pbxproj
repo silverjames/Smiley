@@ -15,6 +15,9 @@
 		72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A657911B2097FA009EDC78 /* LaunchScreen.xib */; };
 		72A6579F1B2097FA009EDC78 /* SmileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6579E1B2097FA009EDC78 /* SmileyTests.swift */; };
 		72A657A91B209AE2009EDC78 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657A81B209AE2009EDC78 /* FaceView.swift */; };
+		72E25FB91B2F62B800192973 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E25FB81B2F62B800192973 /* Media.xcassets */; };
+		72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 72E25FBA1B2F631C00192973 /* schnick!.m4a */; };
+		72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72FE35091B313EF3002CD0BA /* Aentropy.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		72A6579D1B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A6579E1B2097FA009EDC78 /* SmileyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyTests.swift; sourceTree = "<group>"; };
 		72A657A81B209AE2009EDC78 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		72E25FB81B2F62B800192973 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		72E25FBA1B2F631C00192973 /* schnick!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "schnick!.m4a"; sourceTree = "<group>"; };
+		72FE35091B313EF3002CD0BA /* Aentropy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aentropy.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,7 @@
 		72A6577A1B2097FA009EDC78 = {
 			isa = PBXGroup;
 			children = (
-				72A657851B2097FA009EDC78 /* Smiley */,
+				72A657851B2097FA009EDC78 /* Happiness */,
 				72A6579B1B2097FA009EDC78 /* SmileyTests */,
 				72A657841B2097FA009EDC78 /* Products */,
 			);
@@ -78,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72A657851B2097FA009EDC78 /* Smiley */ = {
+		72A657851B2097FA009EDC78 /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
 				723E89551B26BC5100DD7779 /* AppIcon.appiconset */,
@@ -87,6 +93,7 @@
 				72A6578C1B2097FA009EDC78 /* Main.storyboard */,
 				72A657861B2097FA009EDC78 /* Supporting Files */,
 			);
+			name = Happiness;
 			path = Smiley;
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
+				72E25FB81B2F62B800192973 /* Media.xcassets */,
+				72E25FBA1B2F631C00192973 /* schnick!.m4a */,
+				72FE35091B313EF3002CD0BA /* Aentropy.mp3 */,
 				72A657881B2097FA009EDC78 /* AppDelegate.swift */,
 				72A657911B2097FA009EDC78 /* LaunchScreen.xib */,
 				72A657871B2097FA009EDC78 /* Info.plist */,
@@ -167,6 +177,7 @@
 				TargetAttributes = {
 					72A657821B2097FA009EDC78 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = KEKRBGN226;
 					};
 					72A657971B2097FA009EDC78 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -198,9 +209,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E25FB91B2F62B800192973 /* Media.xcassets in Resources */,
 				72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */,
 				72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */,
 				723E89601B26BC5100DD7779 /* AppIcon.appiconset in Resources */,
+				72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */,
+				72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */,
 				72A657901B2097FA009EDC78 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +364,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bernhard Kraft (N8PX874FHL)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Bernhard Kraft (N8PX874FHL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,9 +379,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bernhard Kraft (N8PX874FHL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

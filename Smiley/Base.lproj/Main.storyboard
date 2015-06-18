@@ -30,7 +30,10 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                 </userDefinedRuntimeAttributes>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SAg-IZ-B5T" appends="YES" id="97l-CH-5ep"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,6 +49,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snR-bH-3YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SAg-IZ-B5T">
+                    <connections>
+                        <action selector="tap:" destination="yo4-Bv-Mxc" id="ESd-QS-2fK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="374" y="362"/>
         </scene>

@@ -89,22 +89,12 @@ class FaceView: UIView {
         color.set()
         mouthPath.stroke()
         
-    }
-    
-    func scale (gesture: UIPinchGestureRecognizer){
-        
-        switch gesture.state{
-        case .Changed:
-            scaleFactor *= gesture.scale
-            println("pinch recognized, scale is: \(gesture.scale)")
-            gesture.scale = 1
-        default:
-            break
-        }
+//        the playpen
+        var context: CGContextRef = UIGraphicsGetCurrentContext()
         
     }
     
-
+//  private functions supporting drawRect
     private func getControlPoint(cp: ControlPoints, smiliness: Double) -> CGPoint{
         var xFactor: CGFloat
         
@@ -133,6 +123,21 @@ class FaceView: UIView {
         color.set()
         return path
 
+    }
+    
+//    gesture handlers
+    func scale (gesture: UIPinchGestureRecognizer){
+        
+        switch gesture.state{
+        case .Changed:
+            scaleFactor *= gesture.scale
+            println("pinch recognized, scale is: \(gesture.scale)")
+            gesture.scale = 1
+        default:
+            break
+        }
+        
+        
     }
     
 

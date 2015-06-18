@@ -10,12 +10,12 @@ import UIKit
 
 class SmileyViewController: UIViewController, faceViewDataSource {
     
-    
     @IBOutlet weak var faceView: FaceView!{
         didSet {
             faceView.dataSource = self
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
             faceView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "changeHappiness:"))
+            faceView.addGestureRecognizer(UIRotationGestureRecognizer(target: self, action: "rotate:"))
         }
         
     }
@@ -44,6 +44,23 @@ class SmileyViewController: UIViewController, faceViewDataSource {
         default:
             break
         }
+    }
+    
+    func rotate (gesture: UIRotationGestureRecognizer){
+        let currentTransMatrix = faceView.transform
+        
+        switch gesture.state{
+        case .Began:
+            break
+        case .Ended:
+            fallthrough
+        case .Changed:
+            faceView.transform = CGAffineTransformRotate(currentTransMatrix, gesture.rotation/10)
+            updateUI()
+        default:
+            break
+        }
+    
     }
     
     func smilinessForFaceView(sender: FaceView) -> Double? {
