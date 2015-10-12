@@ -90,7 +90,7 @@ class FaceView: UIView {
         mouthPath.stroke()
         
 //        the playpen
-        var context: CGContextRef = UIGraphicsGetCurrentContext()
+//        var context: CGContextRef = UIGraphicsGetCurrentContext()
         
     }
     
@@ -104,7 +104,7 @@ class FaceView: UIView {
         case .CP2:
             xFactor = mouthControlPointSeparator * faceRadius * scaleFactor
         }
-        var yFactor = mouthYBaseline +  scaleFactor * faceRadius * smilinessDamper * CGFloat(smiliness)
+        let yFactor = mouthYBaseline +  scaleFactor * faceRadius * smilinessDamper * CGFloat(smiliness)
         return CGPoint(x: faceCenter.x + xFactor, y: yFactor)
     }
     
@@ -131,7 +131,7 @@ class FaceView: UIView {
         switch gesture.state{
         case .Changed:
             scaleFactor *= gesture.scale
-            println("pinch recognized, scale is: \(gesture.scale)")
+            print("pinch recognized, scale is: \(gesture.scale)")
             gesture.scale = 1
         default:
             break

@@ -8,7 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		723E89281B25D89A00DD7779 /* SmileyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E89271B25D89A00DD7779 /* SmileyViewController.swift */; };
-		723E89601B26BC5100DD7779 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 723E89551B26BC5100DD7779 /* AppIcon.appiconset */; };
+		7289D2011BCC246000E49A68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F61BCC246000E49A68 /* Contents.json */; settings = {ASSET_TAGS = (); }; };
+		7289D2021BCC246000E49A68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F71BCC246000E49A68 /* Icon-40.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F81BCC246000E49A68 /* Icon-40@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F91BCC246000E49A68 /* Icon-40@3x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2071BCC246000E49A68 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FC1BCC246000E49A68 /* Icon-76.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FE1BCC246000E49A68 /* Icon-Small.png */; settings = {ASSET_TAGS = (); }; };
+		7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D2001BCC246000E49A68 /* Icon-Small@3x.png */; settings = {ASSET_TAGS = (); }; };
 		72A657891B2097FA009EDC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657881B2097FA009EDC78 /* AppDelegate.swift */; };
 		72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578C1B2097FA009EDC78 /* Main.storyboard */; };
 		72A657901B2097FA009EDC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578F1B2097FA009EDC78 /* Images.xcassets */; };
@@ -32,7 +42,17 @@
 
 /* Begin PBXFileReference section */
 		723E89271B25D89A00DD7779 /* SmileyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyViewController.swift; sourceTree = SOURCE_ROOT; };
-		723E89551B26BC5100DD7779 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../../../Downloads/ios/AppIcon.appiconset; sourceTree = "<group>"; };
+		7289D1F61BCC246000E49A68 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7289D1F71BCC246000E49A68 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		7289D1F81BCC246000E49A68 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		7289D1F91BCC246000E49A68 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		7289D1FC1BCC246000E49A68 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		7289D1FE1BCC246000E49A68 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		7289D2001BCC246000E49A68 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
 		72A657831B2097FA009EDC78 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A657871B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A657881B2097FA009EDC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +86,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7289D1F51BCC246000E49A68 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				7289D1F61BCC246000E49A68 /* Contents.json */,
+				7289D1F71BCC246000E49A68 /* Icon-40.png */,
+				7289D1F81BCC246000E49A68 /* Icon-40@2x.png */,
+				7289D1F91BCC246000E49A68 /* Icon-40@3x.png */,
+				7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */,
+				7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */,
+				7289D1FC1BCC246000E49A68 /* Icon-76.png */,
+				7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */,
+				7289D1FE1BCC246000E49A68 /* Icon-Small.png */,
+				7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */,
+				7289D2001BCC246000E49A68 /* Icon-Small@3x.png */,
+			);
+			name = AppIcon.appiconset;
+			path = Images.xcassets/AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		72A6577A1B2097FA009EDC78 = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +126,6 @@
 		72A657851B2097FA009EDC78 /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				723E89551B26BC5100DD7779 /* AppIcon.appiconset */,
 				72A657A81B209AE2009EDC78 /* FaceView.swift */,
 				723E89271B25D89A00DD7779 /* SmileyViewController.swift */,
 				72A6578C1B2097FA009EDC78 /* Main.storyboard */,
@@ -101,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
+				7289D1F51BCC246000E49A68 /* AppIcon.appiconset */,
 				72E25FB81B2F62B800192973 /* Media.xcassets */,
 				72E25FBA1B2F631C00192973 /* schnick!.m4a */,
 				72FE35091B313EF3002CD0BA /* Aentropy.mp3 */,
@@ -172,7 +211,9 @@
 		72A6577B1B2097FA009EDC78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "bfk engineering";
 				TargetAttributes = {
 					72A657821B2097FA009EDC78 = {
@@ -209,13 +250,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */,
 				72E25FB91B2F62B800192973 /* Media.xcassets in Resources */,
 				72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */,
 				72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */,
-				723E89601B26BC5100DD7779 /* AppIcon.appiconset in Resources */,
+				7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */,
+				7289D2071BCC246000E49A68 /* Icon-76.png in Resources */,
+				7289D2011BCC246000E49A68 /* Contents.json in Resources */,
 				72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */,
 				72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */,
 				72A657901B2097FA009EDC78 /* Images.xcassets in Resources */,
+				7289D2021BCC246000E49A68 /* Icon-40.png in Resources */,
+				7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */,
+				7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */,
+				7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */,
+				7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */,
+				7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */,
+				7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +349,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,6 +421,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.Happiness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -383,6 +436,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.Happiness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -403,6 +457,7 @@
 				);
 				INFOPLIST_FILE = SmileyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
@@ -418,6 +473,7 @@
 				);
 				INFOPLIST_FILE = SmileyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
