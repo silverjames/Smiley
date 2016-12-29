@@ -14,8 +14,8 @@ class SmileyViewController: UIViewController, faceViewDataSource {
         didSet {
             faceView.dataSource = self
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
-            faceView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "changeHappiness:"))
-            faceView.addGestureRecognizer(UIRotationGestureRecognizer(target: self, action: "rotate:"))
+            faceView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(SmileyViewController.changeHappiness(_:))))
+            faceView.addGestureRecognizer(UIRotationGestureRecognizer(target: self, action: #selector(SmileyViewController.rotate(_:))))
         }
         
     }
@@ -33,29 +33,29 @@ class SmileyViewController: UIViewController, faceViewDataSource {
     
 //    evaluates the panned distance in relation to face radius. Will ignore x-axis movements, 
 //    look at y-axis only
-    func changeHappiness (gesture: UIPanGestureRecognizer){
+    func changeHappiness (_ gesture: UIPanGestureRecognizer){
         var startYLocation: CGFloat = 0
         
         switch gesture.state{
-        case .Began:
-            startYLocation = gesture.translationInView(faceView).y
-        case .Changed:
-            happiness += Int((startYLocation - gesture.translationInView(faceView).y)/( 10 * faceView.faceRadius) * -100)
+        case .began:
+            startYLocation = gesture.translation(in: faceView).y
+        case .changed:
+            happiness += Int((startYLocation - gesture.translation(in: faceView).y)/( 10 * faceView.faceRadius) * -100)
         default:
             break
         }
     }
     
-    func rotate (gesture: UIRotationGestureRecognizer){
+    func rotate (_ gesture: UIRotationGestureRecognizer){
         let currentTransMatrix = faceView.transform
         
         switch gesture.state{
-        case .Began:
+        case .began:
             break
-        case .Ended:
+        case .ended:
             fallthrough
-        case .Changed:
-            faceView.transform = CGAffineTransformRotate(currentTransMatrix, gesture.rotation/10)
+        case .changed:
+            faceView.transform = currentTransMatrix.rotated(by: gesture.rotation/10)
             updateUI()
         default:
             break
@@ -63,7 +63,7 @@ class SmileyViewController: UIViewController, faceViewDataSource {
     
     }
     
-    func smilinessForFaceView(sender: FaceView) -> Double? {
+    func smilinessForFaceView(_ sender: FaceView) -> Double? {
         return Double(happiness - 50)/50
     }
 }

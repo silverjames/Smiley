@@ -9,7 +9,7 @@
 import UIKit
 
 protocol faceViewDataSource: class {
-    func smilinessForFaceView(sender:FaceView) ->Double?
+    func smilinessForFaceView(_ sender:FaceView) ->Double?
 }
 
 @IBDesignable
@@ -21,7 +21,7 @@ class FaceView: UIView {
     @IBInspectable
     var lineWidth: CGFloat = 3 { didSet {setNeedsDisplay()}}
     @IBInspectable
-    var color: UIColor = UIColor.blueColor() {didSet {setNeedsDisplay()}}
+    var color: UIColor = UIColor.blue {didSet {setNeedsDisplay()}}
     
     //  constants, structs and delegates
     let eyeToFaceFactor: CGFloat = 0.15
@@ -30,19 +30,19 @@ class FaceView: UIView {
     let mouthControlPointSeparator: CGFloat = 0.3
     let smilinessDamper: CGFloat = 0.3
     
-    private enum Eye {
-        case Left, Right
+    fileprivate enum Eye {
+        case left, right
     }
     
-    private enum ControlPoints {
-        case CP1, CP2
+    fileprivate enum ControlPoints {
+        case cp1, cp2
     }
     
     weak var dataSource: faceViewDataSource?
     
 //  computed properties
     var faceCenter: CGPoint {
-        return convertPoint(center, fromView: superview)
+        return convert(center, from: superview)
     }
     
     var faceRadius: CGFloat {
@@ -67,7 +67,7 @@ class FaceView: UIView {
     
 
 //    public methods
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
 //        the face
         let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius * scaleFactor, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
         facePath.lineWidth = lineWidth
@@ -75,16 +75,16 @@ class FaceView: UIView {
         facePath.stroke()
         
 //      the eyes
-        getEyePath(.Left).stroke()
-        getEyePath(.Right).stroke()
+        getEyePath(.left).stroke()
+        getEyePath(.right).stroke()
  
 
 //        the mouth
         let smiliness = dataSource?.smilinessForFaceView(self) ?? 0.0
         
         let mouthPath = UIBezierPath()
-        mouthPath.moveToPoint(CGPoint(x: leftEyeCenter.x - eyeRadius , y: mouthYBaseline))
-        mouthPath.addCurveToPoint(CGPoint(x: rightEyeCenter.x + eyeRadius, y: mouthYBaseline), controlPoint1: getControlPoint(.CP1, smiliness: smiliness), controlPoint2: getControlPoint(.CP2, smiliness: smiliness))
+        mouthPath.move(to: CGPoint(x: leftEyeCenter.x - eyeRadius , y: mouthYBaseline))
+        mouthPath.addCurve(to: CGPoint(x: rightEyeCenter.x + eyeRadius, y: mouthYBaseline), controlPoint1: getControlPoint(.cp1, smiliness: smiliness), controlPoint2: getControlPoint(.cp2, smiliness: smiliness))
         mouthPath.lineWidth = lineWidth
         color.set()
         mouthPath.stroke()
@@ -95,26 +95,26 @@ class FaceView: UIView {
     }
     
 //  private functions supporting drawRect
-    private func getControlPoint(cp: ControlPoints, smiliness: Double) -> CGPoint{
+    fileprivate func getControlPoint(_ cp: ControlPoints, smiliness: Double) -> CGPoint{
         var xFactor: CGFloat
         
         switch cp {
-        case .CP1:
+        case .cp1:
             xFactor = -1 * mouthControlPointSeparator * faceRadius * scaleFactor
-        case .CP2:
+        case .cp2:
             xFactor = mouthControlPointSeparator * faceRadius * scaleFactor
         }
         let yFactor = mouthYBaseline +  scaleFactor * faceRadius * smilinessDamper * CGFloat(smiliness)
         return CGPoint(x: faceCenter.x + xFactor, y: yFactor)
     }
     
-    private func getEyePath(eye: Eye) ->UIBezierPath{
+    fileprivate func getEyePath(_ eye: Eye) ->UIBezierPath{
         var center: CGPoint
         
         switch eye {
-        case .Left:
+        case .left:
             center = leftEyeCenter
-        case .Right:
+        case .right:
             center = rightEyeCenter
         }
 
@@ -126,10 +126,10 @@ class FaceView: UIView {
     }
     
 //    gesture handlers
-    func scale (gesture: UIPinchGestureRecognizer){
+    func scale (_ gesture: UIPinchGestureRecognizer){
         
         switch gesture.state{
-        case .Changed:
+        case .changed:
             scaleFactor *= gesture.scale
             print("pinch recognized, scale is: \(gesture.scale)")
             gesture.scale = 1

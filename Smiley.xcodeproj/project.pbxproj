@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		723E89281B25D89A00DD7779 /* SmileyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E89271B25D89A00DD7779 /* SmileyViewController.swift */; };
-		7289D2011BCC246000E49A68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F61BCC246000E49A68 /* Contents.json */; settings = {ASSET_TAGS = (); }; };
-		7289D2021BCC246000E49A68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F71BCC246000E49A68 /* Icon-40.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F81BCC246000E49A68 /* Icon-40@2x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F91BCC246000E49A68 /* Icon-40@3x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2071BCC246000E49A68 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FC1BCC246000E49A68 /* Icon-76.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FE1BCC246000E49A68 /* Icon-Small.png */; settings = {ASSET_TAGS = (); }; };
-		7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */; settings = {ASSET_TAGS = (); }; };
-		7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D2001BCC246000E49A68 /* Icon-Small@3x.png */; settings = {ASSET_TAGS = (); }; };
+		7289D2011BCC246000E49A68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F61BCC246000E49A68 /* Contents.json */; };
+		7289D2021BCC246000E49A68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F71BCC246000E49A68 /* Icon-40.png */; };
+		7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F81BCC246000E49A68 /* Icon-40@2x.png */; };
+		7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F91BCC246000E49A68 /* Icon-40@3x.png */; };
+		7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */; };
+		7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */; };
+		7289D2071BCC246000E49A68 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FC1BCC246000E49A68 /* Icon-76.png */; };
+		7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */; };
+		7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FE1BCC246000E49A68 /* Icon-Small.png */; };
+		7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */; };
+		7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D2001BCC246000E49A68 /* Icon-Small@3x.png */; };
 		72A657891B2097FA009EDC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657881B2097FA009EDC78 /* AppDelegate.swift */; };
 		72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578C1B2097FA009EDC78 /* Main.storyboard */; };
 		72A657901B2097FA009EDC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578F1B2097FA009EDC78 /* Images.xcassets */; };
@@ -219,9 +219,11 @@
 					72A657821B2097FA009EDC78 = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = KEKRBGN226;
+						LastSwiftMigration = 0820;
 					};
 					72A657971B2097FA009EDC78 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = 72A657821B2097FA009EDC78;
 					};
 				};
@@ -424,6 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.Happiness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -439,6 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.Happiness.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -459,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
 			name = Debug;
@@ -475,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bfk-engineering.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smiley.app/Smiley";
 			};
 			name = Release;
