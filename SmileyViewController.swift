@@ -13,7 +13,7 @@ class SmileyViewController: UIViewController, faceViewDataSource {
     @IBOutlet weak var faceView: FaceView!{
         didSet {
             faceView.dataSource = self
-            faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:"))
+            faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: Selector(("scale:"))))
             faceView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(SmileyViewController.changeHappiness(_:))))
             faceView.addGestureRecognizer(UIRotationGestureRecognizer(target: self, action: #selector(SmileyViewController.rotate(_:))))
         }
@@ -33,7 +33,7 @@ class SmileyViewController: UIViewController, faceViewDataSource {
     
 //    evaluates the panned distance in relation to face radius. Will ignore x-axis movements, 
 //    look at y-axis only
-    func changeHappiness (_ gesture: UIPanGestureRecognizer){
+    @objc func changeHappiness (_ gesture: UIPanGestureRecognizer){
         var startYLocation: CGFloat = 0
         
         switch gesture.state{
@@ -46,7 +46,7 @@ class SmileyViewController: UIViewController, faceViewDataSource {
         }
     }
     
-    func rotate (_ gesture: UIRotationGestureRecognizer){
+    @objc func rotate (_ gesture: UIRotationGestureRecognizer){
         let currentTransMatrix = faceView.transform
         
         switch gesture.state{

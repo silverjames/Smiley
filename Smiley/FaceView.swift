@@ -3,6 +3,8 @@
 //  Smiley
 //
 //  Created by Bernhard Kraft on 04.06.15.
+//  updated May 2018 to Swift 4.1
+//
 //  Copyright (c) 2015 bfk engineering. All rights reserved.
 //
 
@@ -13,6 +15,7 @@ protocol faceViewDataSource: class {
 }
 
 @IBDesignable
+//@objc(FaceView)
 class FaceView: UIView {
 
 //  Inspectable properties
@@ -69,7 +72,7 @@ class FaceView: UIView {
 //    public methods
     override func draw(_ rect: CGRect) {
 //        the face
-        let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius * scaleFactor, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
+        let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius * scaleFactor, startAngle: 0, endAngle: CGFloat(2 * Double.pi), clockwise: true)
         facePath.lineWidth = lineWidth
         color.set()
         facePath.stroke()
@@ -118,7 +121,7 @@ class FaceView: UIView {
             center = rightEyeCenter
         }
 
-        let path = UIBezierPath(arcCenter: center, radius: eyeRadius, startAngle: 0, endAngle: CGFloat(2*M_PI), clockwise: true)
+        let path = UIBezierPath(arcCenter: center, radius: eyeRadius, startAngle: 0, endAngle: CGFloat(2*Double.pi), clockwise: true)
         path.lineWidth = lineWidth
         color.set()
         return path

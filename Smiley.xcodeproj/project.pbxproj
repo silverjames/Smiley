@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FF25EBC209F44C200E05B5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF25EBB209F44C200E05B5D /* Images.xcassets */; };
 		723E89281B25D89A00DD7779 /* SmileyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E89271B25D89A00DD7779 /* SmileyViewController.swift */; };
 		7289D2011BCC246000E49A68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F61BCC246000E49A68 /* Contents.json */; };
 		7289D2021BCC246000E49A68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F71BCC246000E49A68 /* Icon-40.png */; };
@@ -25,7 +26,6 @@
 		72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A657911B2097FA009EDC78 /* LaunchScreen.xib */; };
 		72A6579F1B2097FA009EDC78 /* SmileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6579E1B2097FA009EDC78 /* SmileyTests.swift */; };
 		72A657A91B209AE2009EDC78 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657A81B209AE2009EDC78 /* FaceView.swift */; };
-		72E25FB91B2F62B800192973 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E25FB81B2F62B800192973 /* Media.xcassets */; };
 		72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 72E25FBA1B2F631C00192973 /* schnick!.m4a */; };
 		72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72FE35091B313EF3002CD0BA /* Aentropy.mp3 */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FF25EBB209F44C200E05B5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		723E89271B25D89A00DD7779 /* SmileyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyViewController.swift; sourceTree = SOURCE_ROOT; };
 		7289D1F61BCC246000E49A68 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		7289D1F71BCC246000E49A68 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		72A6579D1B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A6579E1B2097FA009EDC78 /* SmileyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyTests.swift; sourceTree = "<group>"; };
 		72A657A81B209AE2009EDC78 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
-		72E25FB81B2F62B800192973 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		72E25FBA1B2F631C00192973 /* schnick!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "schnick!.m4a"; sourceTree = "<group>"; };
 		72FE35091B313EF3002CD0BA /* Aentropy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aentropy.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +140,7 @@
 			children = (
 				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
 				7289D1F51BCC246000E49A68 /* AppIcon.appiconset */,
-				72E25FB81B2F62B800192973 /* Media.xcassets */,
+				6FF25EBB209F44C200E05B5D /* Images.xcassets */,
 				72E25FBA1B2F631C00192973 /* schnick!.m4a */,
 				72FE35091B313EF3002CD0BA /* Aentropy.mp3 */,
 				72A657881B2097FA009EDC78 /* AppDelegate.swift */,
@@ -253,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */,
-				72E25FB91B2F62B800192973 /* Media.xcassets in Resources */,
 				72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */,
 				72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */,
 				7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */,
@@ -261,6 +260,7 @@
 				7289D2011BCC246000E49A68 /* Contents.json in Resources */,
 				72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */,
 				72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */,
+				6FF25EBC209F44C200E05B5D /* Images.xcassets in Resources */,
 				72A657901B2097FA009EDC78 /* Images.xcassets in Resources */,
 				7289D2021BCC246000E49A68 /* Icon-40.png in Resources */,
 				7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */,
@@ -372,6 +372,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -382,6 +383,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -421,6 +424,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -430,6 +434,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
