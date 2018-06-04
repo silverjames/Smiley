@@ -7,22 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FF25EBC209F44C200E05B5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF25EBB209F44C200E05B5D /* Images.xcassets */; };
+		6FFCF0FD20C5812B00CA72B3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FFCF0FC20C5812B00CA72B3 /* Media.xcassets */; };
 		723E89281B25D89A00DD7779 /* SmileyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E89271B25D89A00DD7779 /* SmileyViewController.swift */; };
-		7289D2011BCC246000E49A68 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F61BCC246000E49A68 /* Contents.json */; };
-		7289D2021BCC246000E49A68 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F71BCC246000E49A68 /* Icon-40.png */; };
-		7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F81BCC246000E49A68 /* Icon-40@2x.png */; };
-		7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1F91BCC246000E49A68 /* Icon-40@3x.png */; };
-		7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */; };
-		7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */; };
-		7289D2071BCC246000E49A68 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FC1BCC246000E49A68 /* Icon-76.png */; };
-		7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */; };
-		7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FE1BCC246000E49A68 /* Icon-Small.png */; };
-		7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */; };
-		7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7289D2001BCC246000E49A68 /* Icon-Small@3x.png */; };
 		72A657891B2097FA009EDC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657881B2097FA009EDC78 /* AppDelegate.swift */; };
 		72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578C1B2097FA009EDC78 /* Main.storyboard */; };
-		72A657901B2097FA009EDC78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A6578F1B2097FA009EDC78 /* Images.xcassets */; };
 		72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A657911B2097FA009EDC78 /* LaunchScreen.xib */; };
 		72A6579F1B2097FA009EDC78 /* SmileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6579E1B2097FA009EDC78 /* SmileyTests.swift */; };
 		72A657A91B209AE2009EDC78 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A657A81B209AE2009EDC78 /* FaceView.swift */; };
@@ -41,24 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6FF25EBB209F44C200E05B5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6FFCF0FC20C5812B00CA72B3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		723E89271B25D89A00DD7779 /* SmileyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileyViewController.swift; sourceTree = SOURCE_ROOT; };
-		7289D1F61BCC246000E49A68 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		7289D1F71BCC246000E49A68 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
-		7289D1F81BCC246000E49A68 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		7289D1F91BCC246000E49A68 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
-		7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
-		7289D1FC1BCC246000E49A68 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
-		7289D1FE1BCC246000E49A68 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		7289D2001BCC246000E49A68 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
 		72A657831B2097FA009EDC78 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A657871B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A657881B2097FA009EDC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A6578D1B2097FA009EDC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72A6578F1B2097FA009EDC78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72A657921B2097FA009EDC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		72A657981B2097FA009EDC78 /* SmileyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A6579D1B2097FA009EDC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,25 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7289D1F51BCC246000E49A68 /* AppIcon.appiconset */ = {
-			isa = PBXGroup;
-			children = (
-				7289D1F61BCC246000E49A68 /* Contents.json */,
-				7289D1F71BCC246000E49A68 /* Icon-40.png */,
-				7289D1F81BCC246000E49A68 /* Icon-40@2x.png */,
-				7289D1F91BCC246000E49A68 /* Icon-40@3x.png */,
-				7289D1FA1BCC246000E49A68 /* Icon-60@2x.png */,
-				7289D1FB1BCC246000E49A68 /* Icon-60@3x.png */,
-				7289D1FC1BCC246000E49A68 /* Icon-76.png */,
-				7289D1FD1BCC246000E49A68 /* Icon-76@2x.png */,
-				7289D1FE1BCC246000E49A68 /* Icon-Small.png */,
-				7289D1FF1BCC246000E49A68 /* Icon-Small@2x.png */,
-				7289D2001BCC246000E49A68 /* Icon-Small@3x.png */,
-			);
-			name = AppIcon.appiconset;
-			path = Images.xcassets/AppIcon.appiconset;
-			sourceTree = "<group>";
-		};
 		72A6577A1B2097FA009EDC78 = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +95,7 @@
 		72A657861B2097FA009EDC78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				72A6578F1B2097FA009EDC78 /* Images.xcassets */,
-				7289D1F51BCC246000E49A68 /* AppIcon.appiconset */,
-				6FF25EBB209F44C200E05B5D /* Images.xcassets */,
+				6FFCF0FC20C5812B00CA72B3 /* Media.xcassets */,
 				72E25FBA1B2F631C00192973 /* schnick!.m4a */,
 				72FE35091B313EF3002CD0BA /* Aentropy.mp3 */,
 				72A657881B2097FA009EDC78 /* AppDelegate.swift */,
@@ -213,7 +168,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "bfk engineering";
 				TargetAttributes = {
 					72A657821B2097FA009EDC78 = {
@@ -252,23 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7289D2091BCC246000E49A68 /* Icon-Small.png in Resources */,
+				6FFCF0FD20C5812B00CA72B3 /* Media.xcassets in Resources */,
 				72A6578E1B2097FA009EDC78 /* Main.storyboard in Resources */,
 				72A657931B2097FA009EDC78 /* LaunchScreen.xib in Resources */,
-				7289D20A1BCC246000E49A68 /* Icon-Small@2x.png in Resources */,
-				7289D2071BCC246000E49A68 /* Icon-76.png in Resources */,
-				7289D2011BCC246000E49A68 /* Contents.json in Resources */,
 				72FE350A1B313EF3002CD0BA /* Aentropy.mp3 in Resources */,
 				72E25FBB1B2F631C00192973 /* schnick!.m4a in Resources */,
-				6FF25EBC209F44C200E05B5D /* Images.xcassets in Resources */,
-				72A657901B2097FA009EDC78 /* Images.xcassets in Resources */,
-				7289D2021BCC246000E49A68 /* Icon-40.png in Resources */,
-				7289D20B1BCC246000E49A68 /* Icon-Small@3x.png in Resources */,
-				7289D2061BCC246000E49A68 /* Icon-60@3x.png in Resources */,
-				7289D2031BCC246000E49A68 /* Icon-40@2x.png in Resources */,
-				7289D2041BCC246000E49A68 /* Icon-40@3x.png in Resources */,
-				7289D2081BCC246000E49A68 /* Icon-76@2x.png in Resources */,
-				7289D2051BCC246000E49A68 /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +326,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,7 +377,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

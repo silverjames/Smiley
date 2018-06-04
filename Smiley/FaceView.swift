@@ -129,7 +129,7 @@ class FaceView: UIView {
     }
     
 //    gesture handlers
-    func scale (_ gesture: UIPinchGestureRecognizer){
+    @objc func scale (_ gesture: UIPinchGestureRecognizer){
         
         switch gesture.state{
         case .changed:
